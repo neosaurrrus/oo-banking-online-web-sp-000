@@ -34,6 +34,7 @@ attr_accessor :pending, :status, :transfer_amount
 
   def reverse_transfer
     if @status = "complete"
+      puts "#{@sender.balance}#{@sender.name}"
       @receiver.balance -= @amount
       @sender.balance += @amount
       @status = "reversed"
