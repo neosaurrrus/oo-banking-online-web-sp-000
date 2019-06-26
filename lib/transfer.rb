@@ -40,7 +40,5 @@ attr_accessor :pending, :status, :transfer_amount
     end # ofconditional
   end # of method
 
-  
+
 end #of class
-
-
