@@ -36,8 +36,11 @@ attr_accessor :pending, :status, :transfer_amount
     if @status = "complete"
       @receiver.balance -= @amount
       @sender.balance += @amount
+      @status = "reversed"
     end # ofconditional
   end # of method
 
-
+  
 end #of class
+
+
